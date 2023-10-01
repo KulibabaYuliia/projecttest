@@ -4,9 +4,6 @@ import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 
 export default defineConfig({
-   define: {
-    global: {},
-  },
   root: 'src',
   build: {
     rollupOptions: {
