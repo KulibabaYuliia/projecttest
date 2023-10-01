@@ -8,7 +8,7 @@
         <p class="cardlist-descr">${n}</p>
         <div class="cartlist-btns"><button class="cardlist-learn">learn more</button><button class="cardlist-fav"><svg
                 class="cardlist-svg" weight="18" height="18">
-                <use href="src/img/sprite.svg#heart"></use>
+                <use href="https://github.com/KulibabaYuliia/projecttest/blob/main/src/img/sprite.svg#heart"></use>
             </svg></button></div>
         </li>`}var xe={},xo={get exports(){return xe},set exports(t){xe=t}};(function(t){(function(i,n){t.exports=n(i)})(typeof le>"u"?typeof window>"u"?le:window:le,function(i){if(typeof i>"u"&&typeof i.document>"u")return!1;var n,o,a,r,s,p=`
 
