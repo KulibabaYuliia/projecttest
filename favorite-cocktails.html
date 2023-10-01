@@ -3,25 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DRYNKIFY</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Favorite coctails</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/svg+xml" href="/projecttest/assets/favicon-cf4c2324.svg" />
-
-        <link
-      rel="apple-touch-icon"
-      type="image/png"
-      sizes="180x180"
-      href="apple-touch-icon180x180.png"
-    />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css">
-        
-
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -30,12 +16,12 @@
       referrerpolicy="no-referrer"
     />
     
-
-    <script type="module" crossorigin src="/projecttest/assets/index-782f1a41.js"></script>
+    
+    
+    <script type="module" crossorigin src="/projecttest/assets/favorite-cocktails-395d8af0.js"></script>
     <link rel="modulepreload" crossorigin href="/projecttest/assets/header_backdrop-5339563b.js">
-    <link rel="modulepreload" crossorigin href="/projecttest/assets/basicLightbox.min-d8571883.js">
     <link rel="stylesheet" href="/projecttest/assets/header_backdrop-4b00c1b4.css">
-    <link rel="stylesheet" href="/projecttest/assets/index-de27e255.css">
+    <link rel="stylesheet" href="/projecttest/assets/favorite-cocktails-0d7f30df.css">
   </head>
   <body>
     <header class="header">
@@ -161,139 +147,24 @@
 
 
     <main>
-      <section class="container hero-title-img">
-  <div class="hero-btn">
-    <div class="hero-title-btn">
-      <h1 class="title-hero">
-        A party without <span class="title-hero-span">cocktails</span><br> is not like
-        a party
-      </h1>
-      <p class="hero-text">
-        From classic sips to exotic mixes, we're your key to becoming a cocktail
-        wizard!
-      </p>
-    </div>
-
-    <a href="#cocktails-section">
-      <button type="button" class="btn-hero-scroll">View Cocktails</button>
-    </a>
-  </div>
-
-  </div>
-  <div class="hero-img">
-    <div class="title-img">
-      <div class="container-img">
-        <div class="rectangle"></div>
-        <picture class="girl-img-hero">
-          <source srcset="/projecttest/assets/girl-desktop-f9188775.png 1x, /projecttest/assets/girl-desktop@2x-28f35ab1.png 2x" media="(min-width:1280px)" />
-          <source srcset="/projecttest/assets/girl-tablet-32891cfb.png 1x, /projecttest/assets/girl-tablet@2x-7dc44d6a.png 2x" media="(min-width:768px)" />
-          <source srcset="/projecttest/assets/girl-mobile-45bae265.png 1x, /projecttest/assets/girl-mobile@2x-dd84a491.png 2x" media="(max-width:767px)" />
-
-          <img src="/projecttest/assets/girl-mobile-45bae265.png" alt="girl with cocktail" />
-        </picture>
-
-        <picture class="elements-img-hero">
-          <source srcset="/projecttest/assets/elements-desktop-226dfa8a.png 1x, /projecttest/assets/elements-desktop@2x-cc2c837f.png 2x" media="(min-width:1280px)" />
-          <source srcset="/projecttest/assets/elements-tablet-d38072d4.png 1x, /projecttest/assets/elements-tablet@2x-af1924ff.png 2x" media="(min-width:768px)" />
-          <source srcset="/projecttest/assets/elements-mobile-c16980e9.png 1x, /projecttest/assets/elements-mobile@2x-4a06e506.png 2x" media="(max-width:767px)" />
-
-          <img src="/projecttest/assets/elements-mobile-c16980e9.png" alt="girl with cocktail" />
-        </picture>
-
-        <!-- Dark -->
-        <div class="element-dark">
-          <picture class="elements-img-hero-dark">
-            <source srcset="/projecttest/assets/elements-desktop-dark-38326a13.png 1x, /projecttest/assets/elements-desktop-dark@2x-cd9b7de5.png 2x" media="(min-width:1280px)" />
-            <source srcset="/projecttest/assets/elements-tablet-dark-bf0caa8f.png 1x, /projecttest/assets/elements-tablet-dark@2x-a38fd0d6.png 2x" media="(min-width:768px)" />
-            <source srcset="/projecttest/assets/elements-mobile-dark-2105fc32.png 1x, /projecttest/assets/elements-mobile-dark@2x-aa39132f.png 2x" media="(max-width:767px)" />
-            <img src="/projecttest/assets/elements-mobile-dark-2105fc32.png" alt="girl with cocktail" />
-          </picture>
+      <section class="container">
+        <div class="container-section">
+          <h2 class="section-tittle">Favorite coctails</h2>
+          <div class="plug">
+            <svg class="icon-cocktails">
+              <use href="/projecttest/assets/sprite-d0c5584c.svg#cocktails"></use>
+            </svg>
+            <div class="inscription">
+              <p class="message">
+                You haven't added any
+                <span class="color-message">favorite coctails</span> yet
+              </p>
+            </div>
+          </div>
+          <ul class="cardlist"></ul>
+          <div class="pagination" id="pagination"></div>
         </div>
-      </div>
-    </div>
-    <p class="hero-text img-text">Search your favorite cocktail by ABC</p>
-  </div>
-
-</section>
-
-    <section class="container">
-      <div class="keyboard"></div>
-  <div class="alphabet-menu">
-    <button type="button" class="open-alphabet-btn">
-      <p class="btn-letter">A</p>
-      <svg class="svg-icon-down">
-        <use href="/projecttest/assets/sprite-d0c5584c.svg#chevron-down"></use>
-      </svg>
-      <svg class="svg-icon-up display">
-        <use href="/projecttest/assets/sprite-d0c5584c.svg#chevron-up"></use>
-      </svg>
-    </button>
-    <div class="list-container display">
-      <ul class="alphabet-list "></ul>
-    </div>
-  </div>
-
-
-
-      <form class="search-form" id="search-form">
-  <input
-    class="search-form-input"
-    type="text"
-    name="searchQuery"
-    autocomplete="off"
-    placeholder="Search"
-  />
-  <button class="search-form-submit-btn" type="submit">
-    <svg class="search-form-submit-icon" width="16" height="16">
-      <use href="/projecttest/assets/sprite-d0c5584c.svg#search"></use>
-    </svg>
-  </button>
-</form>
-
-    </section>
-
-      <section id="cocktails-section">
-  <div class="container">
-    <h2 class="cardlist-header">Loading Data...</h2>
-    <div class="no-cocktails-wrapper visually-hidden">
-      <svg class="no-cocktails-svg">
-        <use href="/projecttest/assets/sprite-d0c5584c.svg#cocktails"></use>
-      </svg>
-      <p class="no-cocktails-text">
-        Sorry, we <span class="no-cocktails-text-part">didn’t find</span> any
-        cocktail for you
-      </p>
-    </div>
-    <ul class="cardlist"></ul>
-    <div class="pagination-main" id="pagination-main"></div>
-  </div>
-</section>
-
-      <!-- <div class="container-popup">
-  <button class="popup-close-btn close-cocktail-modal-x">
-    <svg class="popup-close-btn-icon">
-      <use href="img/sprite.svg#popup-close-btn"></use>
-    </svg>
-  </button>
-  <div class="box">
-    <div class="picture"><img src="${drinkThumb}" alt="${drink}" onerror="this.onerror=null;this.src='../img/rafiki.jpg';"/></div>
-    <div>
-      <h2 class="name">${drink}</h2>
-      <p class="caption-card">Ingredients:</p>
-      <p class="text text-card">Per cocktail</p>
-      <ul class="list-card ingredients-list">${ingredientsRaw}</ul>
-    </div>
-  </div>
-  <p class="caption-card">Instructions:</p>
-  <p class="text desc-card">
-   ${instructions}
-  </p>
-  <button type="button" class="button-card favorite-theme-light">
-    add to favorite
-  </button>
-   <button type="button" class="button-card back-theme-light close-cocktail-modal-back">Back</button>
-</div> -->
-
+      </section>
     </main>
     <footer class="footer">
     <div class="container footer-container">
@@ -385,14 +256,6 @@
     
 </footer>
     
-  <button class="go-top-btn" id="scrollUpButton">
-    <svg class="icon-go-top" width="30" height="30">
-      <use href="/projecttest/assets/sprite-d0c5584c.svg#arrow-go-top"></use>
-    </svg>
-  </button>
-
-
-      <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.js"></script>
     
   </body>
 </html>
