@@ -1,0 +1,141 @@
+
+.cardlist-header{
+    padding-top: 40px;
+    color: var(--text-color);
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 40px;
+}
+
+
+.cardlist{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.cardlist-item{
+    background-color: var(--cards-color);
+    border-radius: 16px;
+    width: 335px;
+}
+.cardlist-item:last-child{
+    padding-bottom: 80px;
+}
+
+.cardlist-img{
+    border-radius: 16px;
+    margin: 0 auto;
+    margin-top: 14px;
+    width: 307px;
+    height: 257px;
+    object-fit: cover;
+}
+
+.cardlist-drink{
+    margin: 20px 0 0 20px;
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
+}
+
+.cardlist-descr{
+    margin: 14px 20px 0 20px;
+    overflow: hidden;
+    color: var(--text-color);
+    text-overflow: ellipsis;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    white-space: pre-wrap;
+}
+
+.cardlist-learn{
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0.28px;
+    text-transform: uppercase;
+    padding: 14px 71px;
+    
+    border-radius: 12px;
+    border: 1px solid var(--main-color);
+    background-color: transparent;
+}
+
+.cardlist-learn:focus,
+.cardlist-learn:hover{
+    color: var(--cards-color);
+    background-color: var(--main-color);
+    transition: all 250ms;
+}
+
+.cardlist-fav{
+    display: flex;
+    max-width: 48px;
+    max-height: 48px;
+    padding: 22px 22px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: var(--main-color);
+    border-color: transparent;
+}
+
+
+.cartlist-btns{
+    display: flex;
+    column-gap: 15px;
+    margin: 20px 0 20px 20px;
+}
+
+@media screen and (min-width: 767px){
+    .cardlist-header{
+        padding-top: 50px;
+    }
+    .cardlist{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 32px 16px;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 100px;
+    }
+    .cardlist-img{
+        width: 316px;
+        height: 289px;
+    }
+    .cardlist-item:last-child{
+        display: none;
+        }
+    .cardlist-drink{
+        margin: 24px 0 0 24px;
+        font-size: 20px;
+    }
+    .cardlist-descr{
+        margin: 14px 24px 0 24px;
+    }
+    .cardlist-learn{
+        font-size: 18px;
+        letter-spacing: 0.36px;
+        padding: 16px 55px;
+    }
+}
+@media screen and (min-width: 1280px){
+    .cardlist-header{
+        margin:0 0 44px 60px;
+    }
+    .cardlist{
+        gap: 44px 24px;
+    }
+    .cardlist-item:last-child {
+        display: block;
+    }   
+}

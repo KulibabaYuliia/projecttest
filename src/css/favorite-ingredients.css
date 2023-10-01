@@ -1,0 +1,84 @@
+.ingredients-container {
+  padding-bottom: 80px;
+}
+
+.section-title {
+  display: inline-block;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  color: var(--text-color);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.sorry {
+  width: 244px;
+  color: var(--text-color);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+
+.sorry-accent {
+  color: var(--accent-color);
+  font-style: italic;
+}
+
+.sorry-ingredients {
+  margin-top: 98px;
+  margin-bottom: 58px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.cocktails-icon {
+  width: 142px;
+  height: 122px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .ingredients-container {
+    padding-bottom: 100px;
+  }
+  .section-title {
+    margin-top: 100px;
+    margin-bottom: 32px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .cocktails-icon {
+    width: 234px;
+    height: 201px;
+  }
+  .sorry-ingredients {
+    margin-top: 68px;
+    margin-bottom: 40px;
+    gap: 40px;
+  }
+  .sorry {
+    width: 359px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section-title {
+    margin-top: 105px;
+    margin-bottom: 44px;
+  }
+  .sorry-ingredients {
+    margin-top: 56px;
+  }
+  .sorry {
+    width: 372px;
+  }
+}

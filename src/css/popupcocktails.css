@@ -1,0 +1,215 @@
+/* ===================== Phone style =================== */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .name {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .container-popup {
+    position: relative;
+    width: 335px;
+    padding: 40px 20px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: var(--background-color);
+    border-radius: 20px;
+    border: 1px solid black;
+  }
+
+  .popup-close-btn {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .popup-close-btn-icon {
+    width: 22px;
+    height: 22px;
+    stroke: var(--text-color);
+  }
+
+  .picture {
+    width: 295px;
+    height: 277px;
+  }
+
+  .caption-card {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.13;
+    letter-spacing: 0;
+    margin-top: 40px;
+  }
+
+  .text {
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 1.29;
+    color: rgba(36, 36, 36, 0.5);
+  }
+
+  .text-card {
+    margin-top: 8px;
+  }
+
+  .list-card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    list-style: initial;
+    list-style-position: inside;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 8px;
+  }
+
+  .item-card {
+    color: rgba(36, 36, 36, 0.8);
+  }
+
+  .item-card:hover {
+    color: var(--main-color);
+  }
+
+  .desc-card {
+    line-height: 1.43;
+    margin-top: 14px;
+  }
+
+  .button-card {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: 0.02em;
+    width: 100%;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-radius: 12px;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .favorite-theme-light {
+    color: var(--cards-color);
+    background-color: var(--main-color);
+    margin-top: 40px;
+  }
+
+  .favorite-theme-light:hover {
+    background-color: #6e7fcf;
+  }
+
+  .back-theme-light {
+    background-color: rgba(36, 36, 36, 0.1);
+    margin-top: 14px;
+  }
+
+  .back-theme-light:hover {
+    background-color: rgba(36, 36, 36, 0.2);
+  }
+  .is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  /* ================= Theme dark ================= */
+  .container-popup-theme-dark {
+    background-color: #232330;
+  }
+
+  .caption-card-theme-dark {
+    color: var(--cards-color);
+  }
+
+  .text-theme-dark {
+    color: rgba(253, 253, 255, 0.5);
+  }
+
+  .item-card-theme-dark {
+    color: rgba(253, 253, 255, 0.8);
+  }
+
+  /* .favorite-theme-light has the same color as in the dark theme */
+
+  .back-theme-dark {
+    color: var(--cards-color);
+    background-color: rgb(253, 253, 255, 0.1);
+  }
+
+  .back-theme-dark:hover {
+    background-color: rgb(253, 253, 255, 0.2);
+  }
+  /* =================== / Theme dark ==================== */
+
+  @media screen and (min-width: 320px) and (max-width: 374px) {
+    .container-popup {
+      width: 100%;
+    }
+  }
+}
+
+/* ============ Tablet-Desctop style ============== */
+@media screen and (min-width: 768px) {
+  .container-popup {
+    width: 600px;
+    padding: 40px;
+  }
+  .box {
+    display: flex;
+  }
+  .popup-close-btn {
+    top: 18px;
+    right: 18px;
+  }
+  .popup-close-btn-icon {
+    width: 24px;
+    height: 24px;
+  }
+  .picture {
+    width: 288px;
+    margin-right: 20px;
+  }
+  .name {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0;
+  }
+  .caption-card {
+    margin-top: 20px;
+  }
+  .button-card {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1.33;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .favorite-theme-light {
+    width: 291px;
+    margin-right: 18px;
+  }
+  .back-theme-light {
+    width: 172px;
+    margin-top: 40px;
+  }
+}
+
+.ingredient-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+.ingredient-btn:hover {
+  color: var(--main-color);
+}
