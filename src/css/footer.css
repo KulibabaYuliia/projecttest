@@ -8,7 +8,7 @@
   justify-content: space-between;
   align-items: flex-start;
   padding-top: 40px;
-  padding-bottom: 80px;
+  padding-bottom: 50px;
 }
 
 .footer-logo {
@@ -86,7 +86,7 @@
     gap: 8px;
   }
   .social-descr {
-    line-height: 1.10; /* 15.4px */
+    line-height: 1.1; /* 15.4px */
   }
 
   .social-list-icon {
@@ -103,5 +103,111 @@
 @media screen and (min-width: 1280px) {
   .footer-container {
     max-width: 1080px;
+  }
+}
+
+/* SLIDER */
+
+.slider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 80px;
+}
+
+.cr-by-card {
+  background-color: var(--cards-color);
+  border-radius: 20px;
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  scroll-snap-align: start;
+  box-shadow: 1px 10px 26px -18px rgba(66, 68, 90, 1);
+}
+
+.carousel-cr-by {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  gap: 16px;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: 0;
+  scroll-behavior: smooth;
+}
+
+.carousel-cr-by.no-transition-cr-by {
+  scroll-behavior: auto;
+}
+
+.carousel-cr-by::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-cr-by.dragging .cr-by-card {
+  cursor: grab;
+  user-select: none;
+}
+
+.carousel-cr-by.dragging {
+  scroll-behavior: auto;
+  scroll-snap-type: none;
+}
+
+.cr-by-wrapper {
+  max-width: 780px;
+  width: 100%;
+  position: relative;
+}
+
+.cr-by-arrow {
+  width: 28px;
+  height: 28px;
+
+  fill: var(--main-color);
+  background-color: var(--cards-color);
+  border-radius: 50%;
+  padding: 4px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.cr-by-arrow:hover,
+.cr-by-arrow:focus {
+  fill: var(--accent-color);
+}
+
+.cr-by-arrow:first-child {
+  left: -12px;
+}
+
+.cr-by-arrow:last-child {
+  right: -12px;
+}
+
+@media screen and (max-width: 1279px) {
+  .cr-by-wrapper {
+    max-width: 510px;
+  }
+  .carousel-cr-by {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .carousel-cr-by {
+    grid-auto-columns: 100%;
+  }
+  .cr-by-wrapper {
+    max-width: 247px;
   }
 }

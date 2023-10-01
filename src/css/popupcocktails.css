@@ -14,9 +14,7 @@
     margin-left: auto;
     background-color: var(--background-color);
     border-radius: 20px;
-    border: 1px solid black;
   }
-
   .popup-close-btn {
     position: absolute;
     top: 14px;
@@ -33,12 +31,16 @@
     height: 22px;
     stroke: var(--text-color);
   }
-
   .picture {
     width: 295px;
     height: 277px;
   }
-
+  .picture > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+  }
   .caption-card {
     font-weight: 600;
     font-size: 16px;
@@ -46,7 +48,6 @@
     letter-spacing: 0;
     margin-top: 40px;
   }
-
   .text {
     font-weight: 400;
     font-size: 14px;
@@ -54,11 +55,9 @@
     line-height: 1.29;
     color: rgba(36, 36, 36, 0.5);
   }
-
   .text-card {
     margin-top: 8px;
   }
-
   .list-card {
     display: flex;
     flex-direction: column;
@@ -69,20 +68,16 @@
     margin-top: 20px;
     margin-left: 8px;
   }
-
   .item-card {
     color: rgba(36, 36, 36, 0.8);
   }
-
   .item-card:hover {
     color: var(--main-color);
   }
-
   .desc-card {
     line-height: 1.43;
     margin-top: 14px;
   }
-
   .button-card {
     display: block;
     font-weight: 600;
@@ -97,23 +92,19 @@
     text-align: center;
     text-transform: uppercase;
   }
-
-  .favorite-theme-light {
+  .favorite {
     color: var(--cards-color);
     background-color: var(--main-color);
     margin-top: 40px;
   }
-
-  .favorite-theme-light:hover {
+  .favorite:hover {
     background-color: #6e7fcf;
   }
-
-  .back-theme-light {
+  .back {
     background-color: rgba(36, 36, 36, 0.1);
     margin-top: 14px;
   }
-
-  .back-theme-light:hover {
+  .back:hover {
     background-color: rgba(36, 36, 36, 0.2);
   }
   .is-hidden {
@@ -123,30 +114,24 @@
   }
 
   /* ================= Theme dark ================= */
-  .container-popup-theme-dark {
+  .container-popup.dark {
     background-color: #232330;
   }
-
-  .caption-card-theme-dark {
+  .caption-card.dark {
     color: var(--cards-color);
   }
-
-  .text-theme-dark {
+  .text.dark {
     color: rgba(253, 253, 255, 0.5);
   }
-
-  .item-card-theme-dark {
+  .item-card.dark {
     color: rgba(253, 253, 255, 0.8);
   }
-
   /* .favorite-theme-light has the same color as in the dark theme */
-
-  .back-theme-dark {
+  .back.dark {
     color: var(--cards-color);
     background-color: rgb(253, 253, 255, 0.1);
   }
-
-  .back-theme-dark:hover {
+  .back.dark:hover {
     background-color: rgb(253, 253, 255, 0.2);
   }
   /* =================== / Theme dark ==================== */
@@ -188,6 +173,9 @@
   .caption-card {
     margin-top: 20px;
   }
+  .desc-card {
+    margin-top: 18px;
+  }
   .button-card {
     display: inline-block;
     font-size: 18px;
@@ -204,7 +192,6 @@
     margin-top: 40px;
   }
 }
-
 .ingredient-btn {
   background-color: transparent;
   border: none;
@@ -212,4 +199,7 @@
 }
 .ingredient-btn:hover {
   color: var(--main-color);
+}
+.name.dark {
+  color: var(--cards-color);
 }

@@ -6,6 +6,7 @@
 */
 @import url('./reset.css');
 @import url('./header.css');
+@import url('./header_backdrop.css');
 @import url('./hero.css');
 @import url('./keyboard.css');
 @import url('./search.css');
@@ -14,8 +15,9 @@
 @import url('./favorite-ingredients.css');
 @import url('./footer.css');
 @import url('./popupcocktails.css');
-@import url('./basiclightbox.css');
+@import url('./scroll-up.css');
 @import url('./pop-up-ingredients.css');
+@import url('./pagination.css');
 
 :root {
   --main-color: #7e8fdd;
@@ -23,14 +25,20 @@
   --text-color: #242424;
   --background-color: #f8f9ff;
   --cards-color: #fdfdff;
+  --dark-cards-color: #232330;
 }
 
 body {
   font-family: Poppins;
   color: var(--text-color);
   background-image: url(../img/background.jpg);
+  transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+body.dark {
+  background-image: url(../img/background-dark.jpg);
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -41,11 +49,19 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  body.dark {
+    background-image: url(../img/background-dark@2x.jpg);
+  }
 }
 
 @media screen and (min-width: 768px) {
   body {
     background-image: url(../img/background-tablet.jpg);
+  }
+
+  body.dark {
+    background-image: url(../img/background-tablet-dark.jpg);
   }
 }
 
@@ -55,11 +71,19 @@ body {
   body {
     background-image: url(../img/background-tablet@2x.jpg);
   }
+
+  body.dark {
+    background-image: url(../img/background-tablet-dark@2x.jpg);
+  }
 }
 
 @media screen and (min-width: 1280px) {
   body {
     background-image: url(../img/background-desktop.jpg);
+  }
+
+  body.dark {
+    background-image: url(../img/background-desktop-dark.jpg);
   }
 }
 
@@ -68,6 +92,10 @@ body {
   (min-resolution: 2dppx) {
   body {
     background-image: url(../img/background-desktop@2x.jpg);
+  }
+
+  body.dark {
+    background-image: url(../img/background-desktop-dark@2x.jpg);
   }
 }
 
@@ -82,6 +110,27 @@ body {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  height: 34px;
+  border-radius: 4px;
+  background: var(--main-color);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+
+  transition: background 250ms cubic-bezier(0.5, -0.75, 0.7, 2);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--cards-color);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-color);
 }
 
 @media screen and (max-width: 374px) {

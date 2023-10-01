@@ -1,6 +1,5 @@
 
 .cardlist-header{
-    padding-top: 40px;
     color: var(--text-color);
     font-size: 40px;
     font-weight: 500;
@@ -8,20 +7,21 @@
     margin-bottom: 40px;
 }
 
+#cocktails-section{
+    padding: 80px 0 40px 0;
+}
 
 .cardlist{
     display: flex;
     flex-direction: column;
     gap: 14px;
+    
 }
 
 .cardlist-item{
     background-color: var(--cards-color);
     border-radius: 16px;
     width: 335px;
-}
-.cardlist-item:last-child{
-    padding-bottom: 80px;
 }
 
 .cardlist-img{
@@ -88,6 +88,10 @@
     background: var(--main-color);
     border-color: transparent;
 }
+.cardlist-svg{
+    stroke: var(--cards-color);
+    min-width: 18px;
+}
 
 
 .cartlist-btns{
@@ -97,8 +101,8 @@
 }
 
 @media screen and (min-width: 767px){
-    .cardlist-header{
-        padding-top: 50px;
+    #cocktails-section {
+        padding: 50px 0 100px;
     }
     .cardlist{
         flex-direction: row;
@@ -112,7 +116,7 @@
         width: 316px;
         height: 289px;
     }
-    .cardlist-item:last-child{
+    .cardlist:last-child{
         display: none;
         }
     .cardlist-drink{
@@ -122,6 +126,16 @@
     .cardlist-descr{
         margin: 14px 24px 0 24px;
     }
+    .cardlist-fav{
+        max-width: 56px;
+        max-height: 56px;
+    }
+    .cardlist-svg{
+        min-width: 24px;
+        height: 24px;
+        
+    }
+
     .cardlist-learn{
         font-size: 18px;
         letter-spacing: 0.36px;
@@ -135,7 +149,7 @@
     .cardlist{
         gap: 44px 24px;
     }
-    .cardlist-item:last-child {
+    .cardlist:last-child {
         display: block;
     }   
 }

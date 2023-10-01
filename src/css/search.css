@@ -6,6 +6,7 @@
 }
 
 .search-form-input {
+  background-color: transparent;
   border-radius: 80px;
   border: 2px solid var(--main-color);
   padding: 12px 12px 12px 42px;

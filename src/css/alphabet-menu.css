@@ -19,7 +19,7 @@
   flex-shrink: 0;
   border: none;
   border-radius: 8px;
-  background: var(--turquoise, #9cdfdf);
+background: rgba(126, 143, 221, 0.40);;
   color: var(--cards-color);
   text-align: center;
   font-family: Poppins;
@@ -27,6 +27,13 @@
   font-style: normal;
   font-weight: 600;
   line-height: 18px;
+
+  transition: transform 250ms cubic-bezier(.5, -.75, .7, 2);
+}
+
+.open-alphabet-btn:hover,
+.open-alphabet-btn:focus {
+  transform: scale(1.2);
 }
 
 .svg-icon-down {
@@ -51,6 +58,7 @@
     fill: var(--cards-color);
 }
 
+
 .display {
   display: none;
 }
@@ -64,6 +72,10 @@
   border-radius: 8px;
   border: 1px solid var(--accent-color);
   top: 70px;
+}
+
+body.dark .list-container {
+  background: var(--text-color);
 }
 
 .alphabet-list {
@@ -102,6 +114,10 @@
   font-style: normal;
   font-weight: 600;
   line-height: 18px;
+}
+
+body.dark .letter-link {
+  color: var(--cards-color);
 }
 
 .icon-scroll {

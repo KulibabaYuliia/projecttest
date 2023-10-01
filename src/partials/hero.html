@@ -1,16 +1,21 @@
 <section class="container hero-title-img">
-  <div class="hero-title-btn">
-    <h1 class="title-hero">
-      A party without <span class="title-hero-span">cocktails</span> is not like
-      a party
-    </h1>
-    <p class="hero-text">
-      From classic sips to exotic mixes, we're your key to becoming a cocktail
-      wizard!
-    </p>
+  <div class="hero-btn">
+    <div class="hero-title-btn">
+      <h1 class="title-hero">
+        A party without <span class="title-hero-span">cocktails</span><br> is not like
+        a party
+      </h1>
+      <p class="hero-text">
+        From classic sips to exotic mixes, we're your key to becoming a cocktail
+        wizard!
+      </p>
+    </div>
+
     <a href="#cocktails-section">
       <button type="button" class="btn-hero-scroll">View Cocktails</button>
     </a>
+  </div>
+
   </div>
   <div class="hero-img">
     <div class="title-img">
@@ -32,6 +37,7 @@
 
           <img src="./img/hero/girl-mobile.png" alt="girl with cocktail" />
         </picture>
+
         <picture class="elements-img-hero">
           <source srcset="
               ./img/hero/elements-desktop.png    1x,
@@ -48,16 +54,33 @@
 
           <img src="./img/hero/elements-mobile.png" alt="girl with cocktail" />
         </picture>
+
+        <!-- Dark -->
+        <div class="element-dark">
+          <picture class="elements-img-hero-dark">
+            <source srcset="
+                      ./img/hero/elements-desktop-dark.png    1x,
+                      ./img/hero/elements-desktop-dark@2x.png 2x
+                    " media="(min-width:1280px)" />
+            <source srcset="
+                      ./img/hero/elements-tablet-dark.png    1x,
+                      ./img/hero/elements-tablet-dark@2x.png 2x
+                    " media="(min-width:768px)" />
+            <source srcset="
+                      ./img/hero/elements-mobile-dark.png    1x,
+                      ./img/hero/elements-mobile-dark@2x.png 2x
+                    " media="(max-width:767px)" />
+            <img src="./img/hero/elements-mobile-dark.png" alt="girl with cocktail" />
+          </picture>
+        </div>
       </div>
     </div>
     <p class="hero-text img-text">Search your favorite cocktail by ABC</p>
   </div>
 
 </section>
-<section>
-  <!-- place it in the end of hero section
-    search should be in the hero section due to Tech requirements -->
-  <load src="./keyboard.html" />
-  <load src="./search.html" />
 
-</section>
+    <section class="container">
+      <load src="./keyboard.html" />
+      <load src="./search.html" />
+    </section>

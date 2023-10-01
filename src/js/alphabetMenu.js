@@ -88,6 +88,7 @@ lettersMenu.addEventListener('click', e => {
       <use href="./img/sprite.svg#chevron-up"></use>
     </svg>`;
   alphabetContainer.classList.add('display');
+  openBtn.style.background = '#9CDFDF';
   lettersMenu.innerHTML = '';
 
   resetSearch();

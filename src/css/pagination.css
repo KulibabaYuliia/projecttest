@@ -1,0 +1,18 @@
+.btnStyle {
+    width: 40px;
+        height: 40px;
+    
+        border-radius: 4px;
+        border: 1px solid #7e8fdd;
+        background-color: transparent;
+    
+        transition: 0.4s;
+    
+        color: #7e8fdd;
+        font-size: 16px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+}
+/* .btnStyle1{
+    margin-bottom: 20px;
+} */
