@@ -1,5 +1,5 @@
-import spriteURL from './img/sprite.svg';
-import photoUrl from './img/rafiki.jpg';
+import spriteURL from '/img/sprite.svg';
+import photoUrl from '/img/rafiki.jpg';
 
 export function createMarkup({ drinkThumb, drink, description, _id }) {
   let markup = `<li class="cardlist-item" data-id=${_id}>
